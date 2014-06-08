@@ -243,6 +243,7 @@
   .image {
     border: 0;
     position: relative;
+
   }
 
     .image:before {
@@ -273,6 +274,8 @@
         display: block;
         width: 100%;
       }
+
+   a.no-border{ border-bottom: none;}
 
 
 /* Icon */
