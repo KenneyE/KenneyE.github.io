@@ -265,6 +265,10 @@
         width: 100%;
       }
 
+      .image.fit:before {
+        background: none;
+      }
+
     .image.feature {
       display: block;
       margin: 0 0 2em 0;
@@ -357,7 +361,7 @@
       }
 
         .icon.circle.fa-stack-overflow:hover {
-       		background: #FFA909;
+           background: #FFA909;
         }
 
     .icon.feature {
