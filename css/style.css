@@ -272,6 +272,7 @@
     .image.feature {
       display: block;
       margin: 0 0 2em 0;
+      height: 175px;
     }
 
       .image.feature img {
