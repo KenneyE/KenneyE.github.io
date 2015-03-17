@@ -358,10 +358,20 @@
       .icon.circle.fa-stack-overflow {
           background: #FF9900;
           color: white;
-      }
+        }
 
         .icon.circle.fa-stack-overflow:hover {
-           background: #FFA909;
+          background: #FFA909;
+        }
+
+
+        .icon.circle.fa-comment {
+          background: #51AC57;
+          color: white;
+        }
+
+        .icon.circle.fa-comment:hover {
+          background: #51BC66;
         }
 
     .icon.feature {
