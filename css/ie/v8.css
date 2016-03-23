@@ -4,8 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   -ms-behavior: url("css/ie/backgroundsize.min.htc"); }
-  #banner .inner {
-    background: #341b2b; }
+
+#banner .inner {
+  background: #341b2b; }
 
 /* CTA  */
 #cta {
