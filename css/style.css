@@ -326,27 +326,23 @@ a.no-border {
 ol.default {
   list-style: decimal;
   padding-left: 1.25em; }
-
-ol.default li {
-  padding-left: 0.25em; }
+  ol.default li {
+    padding-left: 0.25em; }
 
 ul.default {
   list-style: disc;
   padding-left: 1em; }
-
-ul.default li {
-  padding-left: 0.5em; }
+  ul.default li {
+    padding-left: 0.5em; }
 
 ul.icons {
   cursor: default; }
-
-ul.icons li {
-  display: inline-block;
-  line-height: 1em;
-  padding-left: 0.5em; }
-
-ul.icons li:first-child {
-  padding-left: 0; }
+  ul.icons li {
+    display: inline-block;
+    line-height: 1em;
+    padding-left: 0.5em; }
+  ul.icons li:first-child {
+    padding-left: 0; }
 
 ul.feature-icons {
   cursor: default;
@@ -354,32 +350,28 @@ ul.feature-icons {
   opacity: 0.35;
   overflow: hidden;
   position: relative; }
-
-ul.feature-icons li {
-  display: block;
-  float: left;
-  text-align: center;
-  width: 50%; }
-
-ul.feature-icons li .icon {
-  display: inline-block;
-  font-size: 6.25em;
-  height: 1.25em;
-  line-height: 1.25em;
-  width: 1em; }
+  ul.feature-icons li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 50%; }
+    ul.feature-icons li .icon {
+      display: inline-block;
+      font-size: 6.25em;
+      height: 1.25em;
+      line-height: 1.25em;
+      width: 1em; }
 
 ul.buttons {
   cursor: default; }
+  ul.buttons li {
+    display: inline-block;
+    padding: 0 0 0 1.5em; }
+  ul.buttons li:first-child {
+    padding: 0; }
 
 ul.buttons:last-child {
   margin-bottom: 0; }
-
-ul.buttons li {
-  display: inline-block;
-  padding: 0 0 0 1.5em; }
-
-ul.buttons li:first-child {
-  padding: 0; }
 
 ul.buttons.vertical li {
   display: block;
@@ -461,18 +453,15 @@ table.default thead {
   background-repeat: no-repeat, no-repeat;
   background-size: 25em, 25em;
   color: white; }
-
-.wrapper.style2 .button:hover {
-  background: rgba(255, 255, 255, 0.15) !important; }
-
-.wrapper.style2 .button.special {
-  background: white;
-  border-color: white;
-  color: #83d3c9 !important; }
-
-.wrapper.style2 .button.special:hover {
-  border-color: inherit !important;
-  color: white !important; }
+  .wrapper.style2 .button:hover {
+    background: rgba(255, 255, 255, 0.15) !important; }
+  .wrapper.style2 .button.special {
+    background: white;
+    border-color: white;
+    color: #83d3c9 !important; }
+  .wrapper.style2 .button.special:hover {
+    border-color: inherit !important;
+    color: white !important; }
 
 .wrapper.style3 {
   background: white;
@@ -694,55 +683,49 @@ table.default thead {
   cursor: default;
   padding: 6em 0;
   text-align: center; }
-
-#banner .inner {
-  -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-  -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-  -o-animation: reveal-banner 1s 0.25s ease-in-out;
-  -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-  animation: reveal-banner 1s 0.25s ease-in-out;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  background: rgba(52, 27, 43, 0.5);
-  color: white;
-  display: inline-block;
-  opacity: 0;
-  padding: 3em;
-  text-align: center; }
-
-#banner .inner header {
-  display: inline-block;
-  border-bottom: solid 2px;
-  border-top: solid 2px;
-  margin: 0 0 2em 0;
-  padding: 3px 0 3px 0; }
-
-#banner .inner header h2 {
-  border-bottom: solid 2px;
-  border-top: solid 2px;
-  font-size: 2.5em;
-  font-weight: 900;
-  letter-spacing: 0.2em;
-  margin: 0;
-  padding-left: 0.05em;
-  position: relative;
-  text-transform: uppercase; }
-
-#banner .inner p {
-  letter-spacing: 0.1em;
-  margin: 0;
-  text-transform: uppercase; }
-
-#banner .inner p a {
-  color: inherit;
-  font-weight: 400;
-  text-decoration: none; }
-
-#banner .inner footer {
-  margin: 2em 0 0 0; }
+  #banner .inner {
+    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+    -o-animation: reveal-banner 1s 0.25s ease-in-out;
+    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background: rgba(52, 27, 43, 0.5);
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    padding: 3em;
+    text-align: center; }
+    #banner .inner header {
+      display: inline-block;
+      border-bottom: solid 2px;
+      border-top: solid 2px;
+      margin: 0 0 2em 0;
+      padding: 3px 0 3px 0; }
+      #banner .inner header h2 {
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        font-size: 2.5em;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        margin: 0;
+        padding-left: 0.05em;
+        position: relative;
+        text-transform: uppercase; }
+    #banner .inner p {
+      letter-spacing: 0.1em;
+      margin: 0;
+      text-transform: uppercase; }
+      #banner .inner p a {
+        color: inherit;
+        font-weight: 400;
+        text-decoration: none; }
+    #banner .inner footer {
+      margin: 2em 0 0 0; }
 
 /* Main */
 #main {
@@ -779,9 +762,8 @@ body.index #main {
   color: white;
   padding: 5em;
   text-align: center; }
-
-#cta header {
-  margin-bottom: 2em; }
+  #cta header {
+    margin-bottom: 2em; }
 
 /* Footer */
 #footer {
@@ -789,12 +771,10 @@ body.index #main {
   color: #7c8081;
   padding: 5em 5em 10em 5em;
   text-align: center; }
-
-#footer .copyright {
-  font-size: 0.8em; }
-
-#footer .copyright a {
-  color: inherit; }
+  #footer .copyright {
+    font-size: 0.8em; }
+    #footer .copyright a {
+      color: inherit; }
 
 /* Layers */
 #topButton .toggle {
