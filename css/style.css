@@ -120,7 +120,6 @@ header.special h2 {
   margin-bottom: 0; }
 
 header.special h2 + p {
-  margin-bottom: 0;
   padding-top: 1.5em; }
 
 header.special .icon {
