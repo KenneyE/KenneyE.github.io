@@ -71,6 +71,20 @@
 
 		// Methods.
 			$main._show = function(id, initial) {
+				var videoName = null;
+
+				if (id.startsWith('video')) {
+					videoName = id.replace('video', '')
+					id = 'video'
+				}
+
+				if (videoName) {
+					$('#video > h2').html(videoName.toUpperCase());
+					var $video = $('#video-player'),
+					videoSrc = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/' + videoName
+					$video.attr('src', videoSrc);
+					$video[0].load();
+				}
 
 				var $article = $main_articles.filter('#' + id);
 
@@ -387,15 +401,14 @@
 
 		// Initialize.
 
-			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
+		// Hide main, articles.
+			$main.hide();
+			$main_articles.hide();
 
-			// Initial article.
-				if (location.hash != ''
-				&&	location.hash != '#')
-					$window.on('load', function() {
-						$main._show(location.hash.substr(1), true);
-					});
-
+		// Initial article.
+			if (location.hash != '' &&	location.hash != '#') {
+				$window.on('load', function() {
+					$main._show(location.hash.substr(1), true);
+				});
+			}
 })(jQuery);

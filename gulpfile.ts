@@ -10,11 +10,15 @@ function moveIndex() {
 	return src('src/index.html')
 		.pipe(dest('.'));
 }
+function moveJs() {
+	return src('src/assets/js/main.js')
+		.pipe(dest('assets/js'));
+}
 
-const build = series(sass, moveIndex)
+const build = series(sass, moveIndex, moveJs)
 
 function watch () {
-	return gulpWatch(['src/assets/sass/**/*.scss', 'src/index.html'], build);
+	return gulpWatch(['src/assets/sass/**/*.scss', 'src/assets/js/main.js', 'src/index.html'], build);
 }
 
 exports.watch = series(watch)
