@@ -71,18 +71,14 @@
 
 		// Methods.
 			$main._show = function(id, initial) {
-				var videoName = null;
+				var urlParams = new URLSearchParams(window.location.search);
+				var videoUrl = urlParams.get('videoUrl')
+				var companyName = urlParams.get('companyName') ? 'Hello ' + urlParams.get('companyName') + '!' : 'Hello'
 
-				if (id.startsWith('video')) {
-					videoName = id.replace('video', '')
-					id = 'video'
-				}
-
-				if (videoName) {
-					$('#video > h2').html(videoName.toUpperCase());
-					var $video = $('#video-player'),
-					videoSrc = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/' + videoName
-					$video.attr('src', videoSrc);
+				if (id == 'video' && videoUrl) {
+					$('#video > h2').html(companyName.toUpperCase());
+					var $video = $('#video-player')
+					$video.attr('src', decodeURIComponent(videoUrl));
 					$video[0].load();
 				}
 

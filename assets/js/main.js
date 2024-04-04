@@ -71,18 +71,16 @@
 
 		// Methods.
 			$main._show = function(id, initial) {
-				var videoName = null;
+				var urlParams = new URLSearchParams(window.location.search);
+				var videoUrl = urlParams.get('videoUrl')
+				var companyName = urlParams.get('companyName') ? 'Hello ' + urlParams.get('companyName') + '!' : 'Hello'
 
-				if (id.startsWith('video')) {
-					videoName = id.replace('video', '')
-					id = 'video'
-				}
-
-				if (videoName) {
-					$('#video > h2').html(videoName.toUpperCase());
-					var $video = $('#video-player'),
-					videoSrc = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/' + videoName
-					$video.attr('src', videoSrc);
+				if (id == 'video' && videoUrl) {
+					$('#video > h2').html(companyName.toUpperCase());
+					var $video = $('#video-player')
+					// https://www.dropbox.com/scl/fi/4fq6yq9az04lgnsokxcm1/pigeon.mov?rlkey=lu3saezkwgnduudy20np5o2il&raw=1
+					// https://www.dropbox.com/scl/fi/my6gc5exu162jt0shtfkh/pigeon2.mov?rlkey=60ev8kgx36qz02ii2p0h5krrt&raw=1
+					$video.attr('src', decodeURIComponent(videoUrl));
 					$video[0].load();
 				}
 
