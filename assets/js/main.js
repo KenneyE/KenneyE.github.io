@@ -78,8 +78,6 @@
 				if (id == 'video' && videoUrl) {
 					$('#video > h2').html(companyName.toUpperCase());
 					var $video = $('#video-player')
-					// https://www.dropbox.com/scl/fi/4fq6yq9az04lgnsokxcm1/pigeon.mov?rlkey=lu3saezkwgnduudy20np5o2il&raw=1
-					// https://www.dropbox.com/scl/fi/my6gc5exu162jt0shtfkh/pigeon2.mov?rlkey=60ev8kgx36qz02ii2p0h5krrt&raw=1
 					$video.attr('src', decodeURIComponent(videoUrl));
 					$video[0].load();
 				}
